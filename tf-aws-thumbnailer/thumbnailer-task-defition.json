@@ -1,0 +1,31 @@
+[{
+  "name": "thumbnailer",
+  "image": "${DOCKER_IMAGE}",
+  "hostname": "thumbnailer",
+  "memory": 128,
+  "entryPoint": [],
+  "environment": [
+    {
+      "name": "AWS_DEFAULT_REGION",
+      "value": "${AWS_DEFAULT_REGION}"
+    },
+    {
+      "name": "QueueName",
+      "value": "${QueueName}"
+    },
+    {
+      "name": "VisibilityTimeout",
+      "value": "${VisibilityTimeout}"
+    },
+    {
+      "name": "WaitTimeSeconds",
+      "value": "${WaitTimeSeconds}"
+    }
+    ],
+  "command": [],
+  "portMappings": [],
+  "volumesFrom": [],
+  "links": [],
+  "mountPoints": [],
+  "essential": true
+}]

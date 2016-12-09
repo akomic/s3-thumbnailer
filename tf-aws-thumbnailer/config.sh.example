@@ -1,0 +1,15 @@
+# Cluster related
+StackName=generic
+UniqueID=no1
+cluster_arn=arn:aws:ecs:us-east-1:11111:cluster/tf-generic-no1-public-ecs
+
+remote_state_s3_bucket=our-tf-states
+
+# App related
+DOCKER_VERSION=v5
+DOCKER_IMAGE=my-dockerhub-account/thumbnailer:${DOCKER_VERSION}
+desired_count=2
+deployment_maximum_percent=150
+deployment_minimum_healthy_percent=50
+
+AWS_DEFAULT_REGION="us-east-1"
